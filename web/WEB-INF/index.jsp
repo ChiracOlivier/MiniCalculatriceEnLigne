@@ -12,7 +12,7 @@
   <fieldset>
     <legend>Calculatrice</legend>
     <p>Entrez vos nombres!!!.</p>
-
+    <p> </p>
     <label for="nombre1">Nombre1 </label>
     <input type="number" id="nombre1" name="nombre1" value="<c:out value=""/>" size="20" maxlength="60" />
     <span class="erreur">${form.erreurs['nombre1']}</span>
