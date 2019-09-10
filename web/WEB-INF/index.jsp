@@ -1,3 +1,4 @@
+
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
 <form method="post" action="Servlet">
   <fieldset>
     <legend>Calculatrice</legend>
-    <p>${ a=0 ? 'Entrez vos nombres!!!': 'Rien'} </p>
+    <p>${ calculator.a ? 'Entrez vos nombres!!!': 'Rien'} </p>
 
     <label for="nombre1">Nombre1 </label>
     <input type="number" id="nombre1" name="nombre1" value="<c:out value=""/>" size="20" maxlength="60" />

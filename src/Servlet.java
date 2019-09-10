@@ -19,8 +19,6 @@ public class Servlet extends javax.servlet.http.HttpServlet {
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-        a=false;
-        request.setAttribute("a", a);
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
     }
 }
