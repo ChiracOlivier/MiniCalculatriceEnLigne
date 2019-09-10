@@ -2,12 +2,12 @@ import java.io.IOException;
 
 public class Servlet extends javax.servlet.http.HttpServlet {
     private static final String VUE = "/WEB-INF/index.jsp";
-    boolean a=false;
+    boolean a=true;
 
 
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
        Calculator calculator = new Calculator();
-       a=true;
+       a=false;
        String nombre1= request.getParameter("nombre1");
        String nombre2= request.getParameter("nombre2");
 
