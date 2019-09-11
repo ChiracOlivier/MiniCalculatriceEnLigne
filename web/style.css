@@ -9,13 +9,13 @@ body {
 }
 
 form {
-  margin: 150px auto;
+  margin-top: 150px;
   width: 500px;
 
 }
 
 fieldset {
-  padding: 1px;
+  padding: 3px;
   border: 1px #aacd21 solid;
 }
 
@@ -26,35 +26,16 @@ legend {
 
 /* Forms --------------------------------------------------------------------------------------- */
 
-form label {
-  float: left;
-  width: 250px;
-  margin: 3px 0px 0px 5px;
-}
-
 form input {
-  margin: 3px 3px 0px 0px;
+  margin: 3px 0px 3px 3px;
   border: 1px #999 solid;
   width: 200px;
   height: 20px;
 }
 
-form .erreur {
-  color: #990f1c;
-}
-
-form .succes {
-  font-weight: bold;
-  color: #abcd0f;
-  margin: 0px 0px 0px 250px;
-}
 
 form input.sansLabel {
   margin-left: 360px;
   width: 90px;
   margin-bottom: 20px;
-}
-
-form .requis {
-  color: #c00;
 }
