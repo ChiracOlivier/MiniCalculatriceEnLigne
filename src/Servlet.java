@@ -6,7 +6,7 @@ public class Servlet extends javax.servlet.http.HttpServlet {
     private static final String VUEX= "/WEB-INF/indexo.jsp";
     private Calculator calculator= new Calculator();
     private Double resultat;
-    private Date heure= new java.sql.Date( );
+    private Date heure= new Date();
     private double nombre1, nombre2;
     private String operation="",number1="", number2="", resultatCompl="";
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
