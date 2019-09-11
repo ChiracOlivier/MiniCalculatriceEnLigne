@@ -1,0 +1,41 @@
+/* Général ------------------------------------------------------------------------------------- */
+
+body, p, legend, label, input {
+    font: normal 10pt verdana, helvetica, sans-serif;
+}
+
+body {
+    background-image: url("route1.jpg");
+}
+
+form {
+    margin-top: 150px;
+    width: 500px;
+
+}
+
+fieldset {
+    padding: 3px;
+    border: 1px #aacd21 solid;
+}
+
+legend {
+    font-weight: bold;
+    color: #abcd0f;
+}
+
+/* Forms --------------------------------------------------------------------------------------- */
+
+form input {
+    margin: 3px 0px 3px 3px;
+    border: 1px #999 solid;
+    width: 200px;
+    height: 20px;
+}
+
+
+form input.sansLabel {
+    margin-left: 360px;
+    width: 90px;
+    margin-bottom: 20px;
+}
