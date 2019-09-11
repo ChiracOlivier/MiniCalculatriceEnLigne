@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Calculatrice En Ligne</title>
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="style2.css" />
 </head>
 <body>
 <form method="post" action="Servlet">
