@@ -26,6 +26,7 @@
 
         <input type="submit" value="ENVOYER" class="sansLabel" />
         </br>
+        <p> En ce moment, il est ${heure} (heure de Bruxelles).</p>
     </fieldset>
 </form>
 </body>

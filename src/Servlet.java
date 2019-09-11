@@ -1,10 +1,12 @@
 import java.io.IOException;
+import java.sql.Date;
 
 public class Servlet extends javax.servlet.http.HttpServlet {
     private static final String VUE = "/WEB-INF/index.jsp";
     private static final String VUEX= "/WEB-INF/indexo.jsp";
     private Calculator calculator= new Calculator();
     private Double resultat;
+    private Date heure= new java.sql.Date( );
     private double nombre1, nombre2;
     private String operation="",number1="", number2="", resultatCompl="";
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
@@ -29,6 +31,7 @@ public class Servlet extends javax.servlet.http.HttpServlet {
         }else {
             resultatCompl = String.valueOf(resultat);
         }
+        request.setAttribute("heure", heure);
        request.setAttribute("operation", operation);
        request.setAttribute("resultatCompl",resultatCompl);
        request.setAttribute("nombre1", nombre1);
@@ -37,6 +40,7 @@ public class Servlet extends javax.servlet.http.HttpServlet {
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
+        request.setAttribute("heure", heure);
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
     }
 }

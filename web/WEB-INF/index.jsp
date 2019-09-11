@@ -13,7 +13,7 @@
 <body>
 <form method="post" action="Servlet">
   <fieldset>
-    <legend>Calculatrice</legend>
+    <legend>Calculatrice( et Montre)</legend>
     <p>Entrez vos nombres!! </p>
 
     <input type="number" id="nombre1" name="nombre1"  placeholder="1er nombre" value="" size="20" maxlength="20" />
@@ -29,6 +29,7 @@
 
     <input type="submit" value="ENVOYER" class="sansLabel" />
     <br />
+    <p> En ce moment, il est ${heure} (heure de Bruxelles).</p>
   </fieldset>
 </form>
 </body>
